@@ -1,0 +1,254 @@
+body {
+  background-color: #D9F5FF;
+}
+
+
+.shape1 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #F3EEC0;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 200px;
+  animation: squashstretch 1.4s ease-in-out 0s infinite alternate;
+}
+
+@keyframes squashstretch  {
+   0% {
+     transform: translateY(-100px);
+     }
+
+   10% {
+     width: 100px;
+     height: 100px;
+     }
+
+   50% {
+     width: 120px;
+     height: 50px;
+     border-bottom-left-radius: 0;
+     transform: translateY(170px);
+   }
+}
+
+.shape2 {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #ECCCAE;
+  position: relative;
+  margin-top: 200px;
+  /* margin-left: 200px; */
+  animation: bounce 1.4s ease-in-out 0s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(8em);
+    animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+
+  15% {
+    transform: translateX(-8em);
+    animation-timing-function: cubic-bezier(.19,.1,.7,.1);
+  }
+
+  70%, 100% {
+    transform: translateX(-8em);
+    animation-timing-function: cubic-bezier(.19,.1,.7,.1);
+  }
+}
+
+
+.shape3 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #E6B8AC;
+  position: relative;
+  margin-top: 300px;
+  margin-left: 300px;
+  animation: moving 1.4s ease-in-out 0s infinite alternate;
+}
+
+@keyframes moving  {
+   0% {
+     transform: translateY(-50px);
+     }
+
+   /* 25% {
+     width: 50px;
+     height: 50px;
+     transform: translateY(-70px);
+     transform: rotate(40deg);
+     } */
+
+   50% {
+     width: 50px;
+     height: 50px;
+     transform: translateY(110px);
+     transform: rotate(90deg);
+   }
+
+   /* 75% {
+     transform: translateY(-200px);
+     } */
+
+   100% {
+     width: 25px;
+       transform: translateY(-250px);
+       /* transform: rotate(90deg); */
+       transform: translateY(-200px);
+
+       }
+}
+
+
+.shape4 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #E5BBC8;
+  /* position: absolute; */
+  margin-top: 300px;
+  margin-left: 400px;
+  animation: pulse 1.4s ease-in-out 0s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    width: 100px;
+  }
+
+  50% {
+    width: 50px;
+    transform: translateX(50px);
+  }
+
+  100% {
+    width: 200px;
+    transform: rotate(90deg);
+    transform: translateX(50px);
+  }
+}
+
+
+
+
+
+.shape5 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #CCB1CD;
+  top: 600px;
+  left: 200px;
+  animation: anticipation 1.4s ease-in-out 0s infinite alternate;
+}
+
+@keyframes anticipation  {
+   0% {
+     width: 100px;
+     height: 100px;
+     }
+
+   25% {
+     transform: translateX(-100px);
+     width: 20px;
+     height: 100px;
+     }
+
+   50% {
+     transform: translateX(0px);
+     width: 100px;
+     height: 100px;
+   }
+
+   /* 75% {
+     transform: translateX(100px);
+     width: 60px;
+     height: 50px;
+
+   } */
+
+   100% {
+     transform: translateX(-100px);
+     width: 20px;
+     height: 100px;
+   }
+}
+
+
+.shape6 {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #A9A5CA;
+  top: 500px;
+  left: 500px;
+  animation: rotate 1.4s ease-in-out 0s infinite normal;
+}
+
+ @keyframes rotate {
+
+   0% {
+     width: 50px;
+     height: 50px;
+   }
+
+   25% {
+     width: 50px;
+     height: 100px;
+     transform: rotate(90deg);
+
+   }
+
+   50% {
+     transform: rotate (90deg);
+   }
+
+
+
+ }
+
+
+
+
+/*
+.shape7 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ABC0DC;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.shape8 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #AFD4E3;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.shape9 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #B3D3C3;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.shape10 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #CEDDBC;
+  margin-top: 100px;
+  margin-left: 100px;
+} */
